@@ -1,0 +1,39 @@
+ public class Employee {
+String Firstname;
+String Lastname;
+double MSalary;
+public Employee(String Firstname,String Lastname,double MSalary){
+this.Firstname=Firstname;
+this.Lastname=Lastname;
+this.MSalary=MSalary;
+       
+}
+ public String getFirstname() {
+        return Firstname;
+    }
+
+    public void setFirstname(String Firstname) {
+        this.Firstname = Firstname;
+    }
+
+    public String getLastname() {
+        return Lastname;
+    }
+
+    public void setLastname(String Lastname) {
+        this.Lastname = Lastname;
+    }
+
+    public double getMSalary() {
+        return MSalary;
+    }
+
+    public void setMSalary(double MSalary) {
+        if(MSalary<=0){
+            return;
+        }
+        this.MSalary = MSalary;
+    }
+
+
+}

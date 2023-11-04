@@ -1,0 +1,31 @@
+
+public class EmployeeTest {
+    public static void Display(Employee employee){
+  System.out.println("NAME \t\t       YEARLY SALARY\n---- \t\t       --------------\n" );    
+    }
+     public static void Display1(Employee employee){
+  System.out.println(employee.getFirstname()+" "+employee.getLastname()+"\t       $"+employee.getMSalary());    
+    }
+   public static void Raisedsalary(Employee employee){
+      double Raisedsalary=employee.getMSalary()+employee.getMSalary()*10.0/100;
+      System.out.println("NAME \t\t       YEARLY SALARY\n---- \t\t       --------------\n" );    
+   
+    }
+    public static void Raisedsalary1(Employee employee){
+      double Raisedsalary=employee.getMSalary()+employee.getMSalary()*10.0/100;
+      System.out.println( employee.getFirstname()+" "+employee.getLastname()+"\t       $"+Raisedsalary);    
+   
+    }
+public static void main(String[] args) {
+
+Employee R=new Employee("Yusra"," Mohammad",20000);
+Employee R1=new Employee("Peshang"," Mohammad",50000);
+  
+Display(R); Display1(R);Display1(R1);
+ 
+ Raisedsalary(R);Raisedsalary1(R);Raisedsalary1(R1);
+ 
+ 
+
+}
+}
